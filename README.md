@@ -1,18 +1,50 @@
-# React + Vite
+# ToDo App
+A clean, modern, and responsive Todo application built with React and CSS Modules. This app features a soft "Dusty Rose" aesthetic with a floating UI design and persistent layout.
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern UI: Glassmorphism-inspired input card with a soft color palette.
 
-Currently, two official plugins are available:
+Persistent Footer: Stylish footer with top-rounded corners that stays at the bottom of the viewport.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive Design: Fully functional across different screen sizes.
 
-## React Compiler
+Task Management: Add, edit, and manage your daily tasks effortlessly.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Empty State: Informative and visually pleasing "Empty" view when no tasks are present.
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
 
-## Expanding the ESLint configuration
+Frontend: React.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Styling: CSS Modules (for scoped and modular styling)
+
+Icons: React Icons (fa-heart, fa-plus, fa-edit)
+
+Bundler: Vite (for fast development)
+
+# Preview
+The app features a header with heavy drop-shadow typography and a pill-shaped input field.
+
+#Installation & Setup
+#### Clone the repository
+```
+git clone https://github.com/Meghamegha2003/Todo-List.git
+
+```
+#### Navigate to the Directory
+```
+cd todo-app
+```
+#### Install Dependencies
+```
+npm install
+```
+#### Start the Development Server
+```
+npm run dev
+```
+# Project Structure
+
+
+# Author
+Megha — Passionate Developer focused on clean UI/UX
