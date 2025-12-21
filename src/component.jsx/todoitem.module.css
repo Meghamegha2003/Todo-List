@@ -1,5 +1,3 @@
-
-
 .todoBox {
   display: flex;
   align-items: center;
@@ -12,9 +10,7 @@
   font-size: 18px;
   font-weight: 500;
   transition: all 0.25s ease;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+  margin: 15px auto 0;
 }
 
 .todoBox:hover {
@@ -26,6 +22,11 @@
   color: #333;
   font-size: 16px;
   flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
 }
 
 .checkList {
@@ -44,20 +45,15 @@
   cursor: pointer;
 }
 
-.checkList:checked + .customBox {
+.checkedBox {
   background-color: #e0b2b2;
   border-color: #e0b2b2;
 }
 
-.checkList:checked + .customBox::after {
+.checkedBox::after {
   content: "✔";
   color: white;
   font-size: 14px;
-}
-
-.checkList:checked + .customBox + .text {
-  text-decoration: line-through;
-  color: gray;
 }
 
 .squareBtn {
@@ -72,7 +68,7 @@
   cursor: pointer;
   transition: 0.2s ease;
   color: white;
-  font-size: 31px;
+  font-size: 18px;
 }
 
 .squareBtn:hover {
@@ -80,31 +76,28 @@
   transform: scale(1.05);
 }
 
-.squareBtn:first-child {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-}
-
 .editIcon {
   font-size: 18px;
   color: white;
 }
 
-.squareBtn:hover .editIcon {
-  color: white;
+.inputBox {
+  width: 76%;
+  border: none;
+  color: black;
+  font-size: 1em;
+  flex: 1;
+}
+
+.inputBox:focus {
+  outline: none;
 }
 
 @media (max-width: 768px) {
- 
-
   .todoBox {
     width: 85%;
     padding: 20px 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
-
   .text {
     font-size: 14px;
   }
