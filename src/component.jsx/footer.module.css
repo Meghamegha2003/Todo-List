@@ -1,0 +1,22 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  padding: 20px;
+  text-align: center;
+  background: #d8a4a4;
+  color: white;
+  font-size: 14px;
+  border-radius: 24px 24px 0 0; 
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+}
+
+.footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
+}

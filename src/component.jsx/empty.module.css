@@ -1,0 +1,23 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0; 
+  color: #7a4f4f;
+  flex-grow: 1; 
+}
+
+.empty p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #7a4f4f; 
+}
+
+.empty span {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #a67878; /* Lighter rose */
+}

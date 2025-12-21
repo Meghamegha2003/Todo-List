@@ -1,0 +1,94 @@
+.todoBox {
+  display: flex;
+  align-items: center;
+  gap: 14px;                
+  width: 55%;
+  background: #ffffff;
+  padding: 38px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  margin-left: 1.5em;
+}
+
+.todoBox:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.text {
+  color: #333;
+  font-size: 16px;
+  flex: 1;                 
+}
+
+.checkList {
+  display: none;
+}
+
+.customBox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;   
+  cursor: pointer;       
+}
+
+.checkList:checked + .customBox {
+  background-color: #e0b2b2;
+  border-color: #e0b2b2;
+}
+
+.checkList:checked + .customBox::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+}
+
+.checkList:checked + .customBox + .text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.squareBtn {
+  width: 36px;
+  height: 36px;
+  background: #e0b2b2;
+  border: none;
+  border-radius: 6px;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+    font-size: 31px;
+}
+
+.squareBtn:hover {
+  background: #d49a9a;
+  transform: scale(1.05);
+}
+
+/* + symbol */
+.squareBtn:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* pencil icon */
+.editIcon {
+  font-size: 18px;
+  color: white;
+}
+
+.squareBtn:hover .editIcon {
+  color: white;
+}

@@ -1,0 +1,14 @@
+
+.head{
+    background-color: hsla(0, 100%, 30%, 0.3);
+    padding: 1px;
+    height: 170px;
+}
+.text{
+   margin: 27px;
+    font-size: 6em;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 14px 1px 4px black;
+    
+}
