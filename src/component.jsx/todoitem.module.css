@@ -30,32 +30,49 @@
 }
 
 .checkList {
-  display: none;
-}
-
-.customBox {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #555;
-  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 2px solid #d8a7a7;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  cursor: pointer;
 }
 
-.checkedBox {
-  background-color: #e0b2b2;
-  border-color: #e0b2b2;
+.checkList:checked {
+  background-color: #d8a7a7;
+  border-color: #d8a7a7;
+  transform: scale(1.05);
 }
 
-.checkedBox::after {
+.checkList:checked::after {
   content: "✔";
   color: white;
   font-size: 14px;
+  font-weight: bold;
 }
 
+.textSpan {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.completedText {
+  text-decoration: line-through;
+  color: #d8a7a7;
+  opacity: 0.7;
+}
 .squareBtn {
   width: 36px;
   height: 36px;
