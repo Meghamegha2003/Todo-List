@@ -1,14 +1,40 @@
-
-.head{
+.head {
     background-color: hsla(0, 100%, 30%, 0.3);
     padding: 1px;
-    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    height: auto;
 }
-.text{
-   margin: 27px;
-    font-size: 6em;
+
+.text {
+    margin: 20px;
+    font-size: clamp(2rem, 8vw, 6rem);
     text-align: center;
     color: hsl(0, 0%, 100%);
     text-shadow: 14px 1px 4px black;
-    
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        min-height: 120px;
+        padding: 15px 0;
+    }
+
+    .text {
+        text-shadow: 6px 1px 3px black;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head {
+        min-height: 80px;
+        padding: 10px 0;
+    }
+
+    .text {
+        text-shadow: 3px 1px 2px black;
+    }
 }
