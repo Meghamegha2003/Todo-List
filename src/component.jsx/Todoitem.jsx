@@ -28,32 +28,22 @@ export default function Todoitem({ item, todos, setTodos }) {
     setIsEdited(!isEdited);
   }
 
-
   return (
-
     <div
       className={style.todoBox}
-      style={{ position: "relative", display: "flex", alignItems: "center" }}
-    >
+      style={{ position: "relative", display: "flex", alignItems: "center" }} >
       <input
         type="checkbox"
         checked={item.done}
         onChange={completed}
-        className={style.checkList}
-      />
-      <span
-        className={`${style.textSpan} ${item.done ? style.completedText : ""}`}
-      >
-        {item.text}
-      </span>
+        className={style.checkList} />
 
       {isEdited ? (
         <input
           type="text"
           value={edit}
           onChange={(e) => setEdit(e.target.value)}
-          className={style.inputBox}
-        />
+          className={style.inputBox} />
       ) : (
         <span className={`${style.text} ${item.done ? style.completed : ""}`}>
           {item.name}
@@ -64,8 +54,7 @@ export default function Todoitem({ item, todos, setTodos }) {
         onClick={() => {
           deleteButton(item);
         }}
-        className={style.squareBtn}
-      >
+        className={style.squareBtn}>
         x
       </button>
 
@@ -73,12 +62,9 @@ export default function Todoitem({ item, todos, setTodos }) {
         onClick={() => {
           editButton();
         }}
-        className={style.squareBtn}
-      >
+        className={style.squareBtn}>
         {isEdited ? <FaCheck /> : <FaPencilAlt />}
       </button>
-
     </div>
-
   );
 }

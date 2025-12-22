@@ -14,7 +14,6 @@ export default function Form({ todos, setTodos }) {
   return (
    
       <form onSubmit={addTodo} className={style.form}>
-
         <div className={style.alignment}>
           <input
           className={style.inputBox}
