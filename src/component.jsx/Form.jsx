@@ -17,7 +17,7 @@ export default function Form({ todos, setTodos }) {
         <div className={style.alignment}>
           <input
           className={style.inputBox}
-          onChange={(e) => setTodo({name:e.target.value})}
+          onChange={(e) => setTodo({...todo,name:e.target.value})}
           type="text"
           value={todo.name}
           placeholder="Add a todo..."
