@@ -1,14 +1,15 @@
-import Header from "./component.jsx/Header"
-import Todo from "./component.jsx/Todo"
+import Header from "./component/Header"
+import Todo from "./component/Todo"
 import "./App.css"
-import Footer from "./component.jsx/footer"
+import Footer from "./component/Footer"
+
 function App() {
  
   return (
       <div className="App">
         <Header />
         <Todo />
-        <Footer />
+        <Footer/>
       </div>
   )
 }
