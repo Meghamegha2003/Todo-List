@@ -11,7 +11,10 @@ export default function useTodos() {
   }, [todos]);
 
   function addTodo(todo) {
-    setTodos(prev => [...prev, todo]);
+    setTodos(prev => {
+      if(prev.find(t=>t.name === todo.name))return prev
+      return [...prev,todo]
+    });
   }
 
   function deleteTodo(name) {
