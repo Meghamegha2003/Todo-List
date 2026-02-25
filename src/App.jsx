@@ -1,7 +1,7 @@
-import Header from "./component/Header"
 import Todo from "./component/Todo"
 import "./App.css"
-import Footer from "./component/Footer"
+import Header from "./component/Header/Header"
+import Footer from "./component/Footer/Footer"
 
 function App() {
  
@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <Header />
         <Todo />
-        <Footer/>
+        <Footer />
       </div>
   )
 }

@@ -1,0 +1,42 @@
+/* Full screen flex center (or you can place it top-right if you want) */
+.popup {
+  position: fixed;
+  top: 20px;           /* notification top */
+  right: 20px;         /* notification right */
+  z-index: 1000;
+}
+
+/* Notification box */
+.popup-box {
+  background-color: #ffffff;
+  color: #333;
+  min-width: 250px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #ff4d8d; /* rose border */
+  box-shadow: 0 6px 18px rgba(255, 77, 141, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* Message text */
+.popup-message {
+  flex: 1;
+}
+
+/* Close X button */
+.popup-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ff4d8d;
+  margin-left: 10px;
+}
+
+.popup-close:hover {
+  color: #e03f77;
+}

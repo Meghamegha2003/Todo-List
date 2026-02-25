@@ -6,7 +6,6 @@ export default function Form({ addTodo }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!name.trim()) return;
     addTodo({ name, done: false });
     setName("");
   }
